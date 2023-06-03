@@ -1,6 +1,14 @@
 import * as React from "react";
+import { StylesProps, createStyles } from 'styles';
 
-interface Props {
+const useStyles = createStyles<Partial<{{ pascalCase name }}Props>>()((theme, params) => ({
+  root: {
+    color: theme.palette.primary.main,
+  },
+}));
+
+
+interface {{ pascalCase name }}Props {
   children?: React.ReactNode;
 }
 

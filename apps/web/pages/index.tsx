@@ -4,7 +4,10 @@ export default function Page() {
   return (
     <>
       <Header text="Web" />
-      <Button />
+      sdsd
+      <Button p={20} m={10}>
+        Boop
+      </Button>
     </>
   );
 }

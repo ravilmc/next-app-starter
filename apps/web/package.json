@@ -9,17 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^13.4.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/server": "^11.11.0",
+    "next": "^13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "tss-react": "^4.8.6",
+    "ui": "workspace:*",
+    "styles": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
+    "@types/node": "^20.2.5",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.2.4",
     "eslint-config-custom": "workspace:*",
+    "prettier-plugin-organize-imports": "^3.2.2",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "^5.1.3"
   }
 }
