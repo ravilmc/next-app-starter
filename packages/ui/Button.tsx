@@ -1,14 +1,20 @@
-import * as React from 'react';
-import { StylesProps, createStyles } from 'styles';
+import React from 'react';
+import { StylesProps, createStyles } from './tss';
 
-const useStyles = createStyles<Partial<ButtonProps>>()((theme, params) => ({
+const useStyles = createStyles<CreateStylesProps>()((theme, params) => ({
   button: {
     margin: params.m,
     padding: params.p,
   },
 }));
 
-interface ButtonProps extends StylesProps {
+type ButtonClasses = Partial<ReturnType<typeof useStyles>['classes']>;
+
+type CreateStylesProps = StylesProps & {
+  classes?: ButtonClasses;
+};
+
+interface ButtonProps extends CreateStylesProps {
   children: React.ReactNode;
 }
 

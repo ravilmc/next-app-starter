@@ -3,5 +3,5 @@
   "trailingComma": "all",
   "endOfLine": "lf",
   "plugins": ["prettier-plugin-organize-imports"],
-  "printWidth": 80
+  "printWidth": 110
 }
